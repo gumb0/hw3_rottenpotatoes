@@ -41,3 +41,7 @@ Then /^I should see all of the movies$/ do
   rows.should == 11
 end
 
+Then /^the director of "Alien" should be "Ridley Scott"$/ do
+  assert page.body.include?("Ridley Scott")
+end
+
